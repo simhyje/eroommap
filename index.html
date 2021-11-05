@@ -96,48 +96,8 @@ var content = '<div class="customoverlay">' +
   '</div>';
 
 //커스텀 오버레이가 표시될 위치입니다 
-//var position = new kakao.maps.LatLng(37.4860407392631,126.838559499205);  
+var position = new kakao.maps.LatLng(37.4860407392631,126.838559499205);  
 
-var foodPositions=[
-		{						
-			 content: '<div>천왕짬뽕</div>',		  
-			 latlng:new kakao.maps.LatLng(37.4861500, 126.839571) //천왕짬뽕
-		  
-		 },
-		 {
-			 content: '<div>일리노이</div>',	 
-			 latlng:new kakao.maps.LatLng(37.486805721, 126.831607577409)//일리노이
-		 },
-		 {
-			 content: '<div>병천순대</div>',	
-			 latlng:new kakao.maps.LatLng(37.488596824, 126.839564751923)//병천순대
-		 },
-		 { 
-			 content: '<div>카츠랑</div>',
-			 latlng:new kakao.maps.LatLng(37.4861761837, 126.839502313468)//카츠랑
-		 }, 
-		 {
-			 content: '<div>돈우네정육식당</div>',
-			 latlng:new kakao.maps.LatLng(37.4875992373637, 126.839106913316)//돈우네
-		 }, 		 
-		 {
-			 content: '<div>식탐</div>',
-			 latlng:new kakao.maps.LatLng(37.489021738886, 126.839498260854)//식탐
-		 }, 
-		 {
-			 content: '<div>해밀</div>',
-			 latlng:new kakao.maps.LatLng(37.4883180401519, 126.837577318156)//해밀
-		 }, 
-		 {
-			 content: '<div>대구반야월막창</div>',
-			 latlng:new kakao.maps.LatLng(37.4876290144401, 126.83841282056)//대구반야월막창
-		 }, 
-		 {
-			 content: '<div>순뚝순뚝</div>',
-			 latlng:new kakao.maps.LatLng(37.4892814028654, 126.83936111268)//순뚝순뚝
-		 }	
-		 ];
-	
 
 
 
@@ -147,7 +107,7 @@ var foodPositions=[
 //커스텀 오버레이를 생성합니다
 var customOverlay = new kakao.maps.CustomOverlay({
   map: map,
-  position: foodPositions,
+  position: position,
   content: content,
   yAnchor: 1 
 });
