@@ -1,0 +1,42 @@
+body {
+  margin: 0 auto;
+}
+
+.flex-container{
+  display: flex;
+  /* background-color: skyblue; */
+  flex-direction: column;
+  align-items: center;
+  width: 95vw;
+  height: 98vh;
+  left: 2.5vw;
+  /* border: 1px solid gray; */
+}
+
+.flex-item{
+  display: flex;
+  /* background-color: green; */
+  padding-top: 5px;
+  padding-bottom: 5px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+button {
+  width: 100%;
+  height: 100%;
+  font-size: 40px;
+}
+
+#eroomLogo {
+  width: 300px;
+  height: auto;
+}
+
+@media (min-width:1024px) {
+  .flex-container {
+    width:1024px;
+    margin-left: calc(50% - 512px);
+  }
+}
